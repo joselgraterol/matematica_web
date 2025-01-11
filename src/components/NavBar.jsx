@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaHome, FaBookOpen, FaInfoCircle, FaSun, FaMoon } from 'react-icons/fa';
-import './Navbar.css';
+import './NavBar.css';
 import { ThemeContext } from '../context/ThemeContext';
 import { useContext } from 'react';
 
