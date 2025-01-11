@@ -1,0 +1,114 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  box-shadow: var(--nav-shadow);
+}
+
+.desktop-navbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 50;
+  margin: auto;
+}
+
+
+.navbar-links {
+  display: flex;
+  gap: 40px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link.active {
+  color: var(--primary-color); 
+}
+
+/* .nav-link:hover {
+  color: var(--primary-color);
+} */
+
+.nav-link.active .icon {
+  fill: var(--primary-color); /* Or a specific blue color like #007bff */
+}
+
+
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: (--text-color);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+  fill: var(--text-color);
+}
+
+
+
+.mobile-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 50;
+}
+
+@media (min-width: 768px) {
+  .desktop-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    /* padding: 0 20px; */
+    /* padding: 0 100px; */
+  }
+
+  .nav-link.active {
+    border-bottom: 3px solid var(--primary-color);
+  }
+
+  .mobile-navbar {
+    display: none;
+  }
+}
+
+

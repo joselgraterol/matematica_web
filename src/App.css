@@ -1,0 +1,61 @@
+/* :root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+} */
+
+.light {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f0f0f0;
+  --text-color: #212529;
+  --text-color-light: #495057;
+  --nav-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px;
+  /* --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+  /* --box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px rgba(0, 0, 0, 0.06) 0px 1px 1px 0px; */
+  --box-shadow: rgba(0, 0, 0, 0.27) 0px 1px 2px 0px;
+}
+
+.dark {
+  --primary-color: #007bff;
+  --secondary-color: #868e96;
+  --background-color: #181818;
+  --text-color: #f0f0f0;
+  --text-color-light: #c0c0c0;
+  --nav-shadow: rgba(255, 255, 255, 0.1) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0px 1px 2px 0px ;
+  --box-shadow:  rgba(255, 255, 255, 0.27) 0px 1px 2px 0px;
+  /* --box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px rgba(0, 0, 0, 0.06) 0px 1px 1px 0px; */
+  /* --box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* body.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+body.light {
+  background-color: #fff;
+  color: #000;
+} */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .app {
+    padding-top: 60px;
+  }
+}
+
