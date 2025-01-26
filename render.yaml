@@ -1,0 +1,8 @@
+static:
+  - name: matematica_web
+    buildCommand: npm install && npm run build
+    publishDir: dist
+    routes:
+      - rewrite: /*
+        to: /index.html
+        status: 200
